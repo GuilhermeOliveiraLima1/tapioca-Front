@@ -1,0 +1,338 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: 25px;
+    margin-right: 50px;
+}
+.foodsAndHistory{
+    display: flex;
+}
+h1{
+    font-size: 45px;
+}
+
+
+#cpf{
+    height: 25px;
+}
+
+.boxes{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.inputFillings {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background-color: #cef781;
+    border-radius: 10px;
+    height: 440px;
+    width: 22%;    
+}
+
+.inputFillings div{
+    font-size: 20px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+}
+
+.inputFillings p{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.suggestion{
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    background-color: #cef781;
+    height: 440px;
+    width: 35%;
+    
+}
+
+.suggestion p{
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+img{
+    border: solid black,1.1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 90%;    
+    height: 90%;
+}
+
+
+.suggestion ul{
+    font-size: 18px;
+    margin-left: auto;
+}
+
+.payment{
+    position: relative;
+    border-radius: 10px;
+    background-color: #cef781;
+    height: 440px;
+    width: 30%;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    margin-bottom: 40px;
+}
+
+.fillingPayment {
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+    margin-top: -35px;
+    margin-bottom: -35px;
+}
+.food{
+    font-size: 20px;
+    display: flex;
+    justify-content: end;
+    margin-right: 15px;
+    font-weight: bold;    
+}
+
+.buttonPayment {
+    font-weight: bold;    
+    position: absolute;
+    bottom: 10px;  
+    right: 15px;  
+    text-align: center;
+}
+
+.modalSales{
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 30px;
+    border: 1px solid black;
+    border-radius: 10px ;
+    width: 700px;
+    margin: 0 auto;
+}
+
+.modalSales h3 {
+    margin-top: 0;
+    font-size: 25px;
+    text-align: center;
+}
+
+.sales{
+    display: flex;
+    justify-content: center;
+}
+
+#buttonBackHistory{
+    margin: 35px auto 0px auto;
+    width: 80px;
+    background: rgb(146, 144, 144);
+    color: white;
+}
+
+#buttonBackHistory:hover{
+    margin: 35px auto 0px auto;
+    width: 80px;
+    background: whitesmoke;
+    color: black;
+}
+
+table{
+    width: 95%;
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th,td{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 18px;
+}
+
+.erroCPF{
+    display: block;
+    position: absolute;
+}
+
+
+
+.modalPayment{
+    margin: 0 auto;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.confirmationPayment{
+    display: flex;
+    flex-direction: column;
+}
+
+button{
+    border-radius: 5px;
+}
+
+#buttonBackPayment{
+    margin: 20px auto 0px auto;
+    width: 80px;
+    background: rgb(146, 144, 144);
+    color: whitesmoke;
+}
+
+#buttonBackPayment:hover{
+    margin: 20px auto 0px auto;
+    width: 80px;
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+#buttonPayment{
+    font-size: 15px;
+    background-color: #6b6b6b;
+    color: white;
+    width: 70px;
+}
+
+#buttonPayment:hover{
+    font-size: 15px;
+    background-color: whitesmoke;
+    color: black;
+    width: 70px;
+}
+
+#buttonHistory{
+    font-size: 20px;
+    background-color: #6b6b6b;
+    color: white;
+    width: 200px;
+}
+
+#buttonHistory:hover{
+    font-size: 20px;
+    background-color: whitesmoke;
+    color: black;
+    width: 200px;
+}
+
+
+#Photopayment{
+    height: 300px;
+    width: auto;
+    border: none;
+}
+
+input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    cursor: pointer;
+    vertical-align: middle; 
+}
+
+input[type="checkbox"]:checked {
+    background-color: #6b6b6b;
+    border-color: black;
+}
+
+input[type="checkbox"]:checked::after {
+    content: '✔';
+    color: whitesmoke;
+    font-size: 15px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.inputBusca {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.inputBusca input[type="text"] {
+    height: 30px;
+    width: 200px;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 2px solid #6b6b6b;
+    border-radius: 5px;
+    outline: none;
+    transition: 0.3s ;
+}
+
+.inputBusca input[type="text"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 4px rgba(0, 123, 255, 0.5);
+}
+
+.inputBusca input[type="text"]::placeholder {
+    color: #a3a2a2;
+    font-style: italic;
+}
+
+
+.foodsInput {
+    display: flex;
+    align-items: center;  /* Alinha verticalmente o texto e o input */
+    gap: 10px;  /* Adiciona um pequeno espaçamento entre o input e o texto */
+}
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #6b6b6b;
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    vertical-align: middle;
+    transition: all 0.3s ease;
+}
+
+input[type="radio"]:checked {
+    background-color: #6b6b6b;
+    border-color: #6b6b6b;
+}
+
+input[type="radio"]:checked::after {
+    content: '';
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    background-color: white;
+    border-radius: 50%;
+}
+
+input[type="radio"]:hover {
+    border-color: #007bff;
+    background-color: #dfe6e9;
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tapiocaria do Neto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="head">
+        <h1>Tapiocaria do Neto</h1>
+
+        <div class="foodsInput">
+        <input value= 1 onchange="getFoods(this.value)" type="radio" name="filtros" checked /> Tapioca
+        <input value= 2 onchange="getFoods(this.value)" type="radio" name="filtros" /> Cuscuz
+        <input value= 3 onchange="getFoods(this.value)" type="radio" name="filtros" /> Sanduiche
+        </div>
+        <div>
+            <button id="buttonHistory" onclick="openModalSearch()">Historico de compras</button>
+        </div>
+    </div>
+    <hr>
+
+    <div class="inputBusca">
+       CPF do comprador: <input type="text" id="cpf" placeholder="Digite o CPF aqui">
+    </div>
+    
+        <div class="boxes">
+            
+        
+            <div class="inputFillings">
+            </div>
+
+            <div class="suggestion">
+                
+                
+            </div>
+
+            <div class="payment">
+                
+            </div>
+            <dialog class="modalSales">
+                <h3>Historico de compras</h3>
+                <div class="sales">
+                    <table>
+                    </table>
+                </div>
+                <button onclick="closeModalSearch()" id="buttonBackHistory">Voltar</button>
+            </dialog>
+
+            <dialog class="modalPayment">
+                
+                
+                
+            </dialog>
+
+        </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
